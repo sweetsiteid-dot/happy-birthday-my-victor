@@ -185,7 +185,7 @@ const emojis = [
 "🩷","🩵","💙","💕","✨","💫"
 ];
 
-for(let i=0;i<45;i++){
+for(let i=0;i<18;i++){
 
 const flower =
 document.createElement("div");
@@ -204,7 +204,7 @@ flower.style.left="0px";
 flower.style.top="0px";
 
 flower.style.fontSize =
-(Math.random()*15+25)+"px";
+(Math.random()*10+20)+"px";
 
 flower.style.setProperty(
 "--x",
@@ -218,6 +218,9 @@ flower.style.setProperty(
 
 flower.style.animation =
 "flowerBurst 2.5s forwards";
+
+flower.style.willChange =
+"transform, opacity";
 
 flowers.appendChild(flower);
 
