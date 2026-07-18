@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday Victor 🩵🩷</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div id="hearts"></div>
+
+<audio id="music" loop>
+<source src="until-i-found-you.mp3" type="audio/mpeg">
+</audio>
+
+<!-- PIN SCREEN -->
+
+<div id="pinScreen">
+
+<div class="pin-box">
+
+<h1>🎂</h1>
+
+<h2>Private Birthday Gift</h2>
+
+<p>Enter PIN</p>
+
+<input
+type="password"
+id="pinInput"
+readonly
+placeholder="••••">
+
+<div class="keypad">
+
+<button onclick="addPin('1')">1</button>
+<button onclick="addPin('2')">2</button>
+<button onclick="addPin('3')">3</button>
+
+<button onclick="addPin('4')">4</button>
+<button onclick="addPin('5')">5</button>
+<button onclick="addPin('6')">6</button>
+
+<button onclick="addPin('7')">7</button>
+<button onclick="addPin('8')">8</button>
+<button onclick="addPin('9')">9</button>
+
+<button onclick="clearPin()">⌫</button>
+<button onclick="addPin('0')">0</button>
+<button onclick="checkPin()">🩷</button>
+
+</div>
+
+</div>
+
+</div>
+
+<div id="website" class="hidden">
+
+<!-- HERO -->
+
+<section class="hero">
+
+<h1>Happy Birthday 🎂</h1>
+
+<h2>Victor 🩵🩷</h2>
+
+<p>
+
+Today is your day.
+
+A day worth celebrating,
+a day worth remembering,
+and a day made even more special
+because it's yours.
+
+So I made this little place
+filled with love,
+memories,
+and wishes just for you.
+
+🩵🩷
+
+</p>
+
+<button onclick="openHeart()">
+Open My Heart 🩷
+</button>
+
+</section>
+
+<!-- LETTER -->
+
+<section id="bottleSection" class="hidden">
+
+<h2>A Letter For My Victor 💌</h2>
+
+<p class="tap-text">
+Tap the bottle
+</p>
+
+<div id="bottleArea">
+
+<div id="bottle" onclick="breakBottle()">
+🍾
+</div>
+
+<div id="flowers"></div>
+
+</div>
+
+<div id="letterContainer">
+
+<div class="letter-paper">
+
+<div id="letterText"></div>
+
+</div>
+
+</div>
+
+</section>
+
+  <!-- GALLERY -->
+
+<section class="gallery">
+
+<h2>Favorite Memories 📸</h2>
+
+<div class="gallery-grid">
+
+<img src="foto1.jpg">
+<img src="foto2.jpg">
+
+<img src="foto3.jpg">
+<img src="foto4.jpg">
+
+<img src="foto5.jpg">
+<img src="foto6.jpg">
+
+<img src="foto7.jpg">
+<img src="foto8.jpg">
+
+<img src="foto9.jpg">
+<img src="foto10.jpg">
+
+</div>
+
+</section>
+
+<!-- QUIZ -->
+
+<section class="quiz-section">
+
+<h2>🩵 About Hazel Quiz 🩷</h2>
+
+<p>
+
+Answer all questions correctly
+to unlock the special surprise.
+
+</p>
+
+<div id="quizBox">
+
+<div class="question active">
+
+<h3>What is Hazel's favorite color?</h3>
+
+<button onclick="checkAnswer(this,true)">Blue 🩵</button>
+<button onclick="checkAnswer(this,false)">Pink</button>
+<button onclick="checkAnswer(this,false)">Purple</button>
+
+</div>
+
+<div class="question">
+
+<h3>What is Hazel's dream destination?</h3>
+
+<button onclick="checkAnswer(this,false)">Bali</button>
+<button onclick="checkAnswer(this,true)">Bandung 🌻</button>
+<button onclick="checkAnswer(this,false)">Yogyakarta</button>
+
+</div>
+
+<div class="question">
+
+<h3>When did we start our story?</h3>
+
+<button onclick="checkAnswer(this,false)">25 May</button>
+<button onclick="checkAnswer(this,false)">15 June</button>
+<button onclick="checkAnswer(this,true)">15 May ❤️</button>
+
+</div>
+
+</div>
+
+<div id="quizSuccess" class="hidden">
+
+<h2>🎉 Birthday Surprise 🎉</h2>
+
+<img src="special.jpg" class="special-photo">
+
+<p>
+
+My favorite person.
+
+My greatest blessing.
+
+My Victor.
+
+🩵🩷
+
+</p>
+
+</div>
+
+  </section>
+
+  <!-- FINAL -->
+
+<section class="final">
+
+<h2>Happy Birthday Victor 🎂</h2>
+
+<h3>From Hazel 🩷</h3>
+
+<p>
+
+May this year bring you
+more happiness than the last.
+
+May every dream you carry
+find its way into reality.
+
+May every step you take
+lead you closer to the life
+you've always wanted.
+
+And whenever life feels heavy,
+
+I hope you remember
+that you never have to face it alone.
+
+Because I'll always be here,
+cheering for you,
+believing in you,
+and loving you.
+
+Thank you for being my safe place.
+
+Thank you for being my home.
+
+Thank you for being mine.
+
+Happy Birthday,
+my Victor.
+
+I love you endlessly.
+
+🩵🩷
+
+- Hazel
+
+</p>
+
+</section>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
